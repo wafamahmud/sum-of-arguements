@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+ <body>
+<h1><em><mark><strong>MY Project on Arguments</strong></mark></em></h1>
+<p id="demo"></p>
+<script>
+    function sumall(a, b, c, d, e) {
+
+    var sum = a + b + c + d + e;
+    for (i = 0; i < arguments.length; i++){
+        sum = arguments[i];
+    }
+    return sum;
+    }
+    document.getElementById("demo").innerHTML = sumall( 1, 7, 23, 90, 10);
+</script>
+ </body>
+</html>
